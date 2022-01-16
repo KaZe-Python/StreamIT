@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 
 const HomePage: React.FC = () => {
   return(
-    <div className="min-h-screen bg-gray-800">
-      <h1 className="font-bold text-white">Hello</h1>
+    <div className="min-h-screen bg-gray-600">
+      <Navbar />
     </div>
   )
 }
