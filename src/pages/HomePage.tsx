@@ -1,9 +1,9 @@
 import React from 'react'
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return(
-    <div>
-      <p>Home Page</p>
+    <div className="min-h-screen bg-gray-800">
+      <h1 className="font-bold text-white">Hello</h1>
     </div>
   )
 }
