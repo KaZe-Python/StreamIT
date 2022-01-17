@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import { AuthContext } from '../context/authContext';
 
 const HomePage: React.FC = () => {
+  const {auth} = useContext(AuthContext)
+
   return(
-    <div className="min-h-screen bg-gray-800">
-      <h1 className="font-bold text-white">Hello</h1>
+    <div className="flex flex-col min-h-screen bg-gray-600">
+      <Navbar />
+      <p>{auth ? "Auth" : "Log"}</p>
+      <Footer />
     </div>
   )
 }
